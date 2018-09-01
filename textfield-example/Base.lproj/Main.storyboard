@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="textfield_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYv-NJ-bIr">
+                                <rect key="frame" x="16" y="20" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQR-HL-uHL">
+                                <rect key="frame" x="16" y="49" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncw-sz-aYj">
+                                <rect key="frame" x="16" y="111" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kq2-l9-hNa" customClass="LargeTextField" customModule="textfield_example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="140" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Underline Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haJ-Q1-KaC">
+                                <rect key="frame" x="16" y="197" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ni-Jy-Jvl" customClass="CustomTextField" customModule="textfield_example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="226" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BQR-HL-uHL" firstAttribute="top" secondItem="lYv-NJ-bIr" secondAttribute="bottom" constant="8" symbolic="YES" id="36Y-xE-wwm"/>
+                            <constraint firstItem="0ni-Jy-Jvl" firstAttribute="trailing" secondItem="Kq2-l9-hNa" secondAttribute="trailing" id="9Kt-gB-7pg"/>
+                            <constraint firstItem="0ni-Jy-Jvl" firstAttribute="top" secondItem="haJ-Q1-KaC" secondAttribute="bottom" constant="8" symbolic="YES" id="9pz-Er-hDh"/>
+                            <constraint firstItem="0ni-Jy-Jvl" firstAttribute="leading" secondItem="haJ-Q1-KaC" secondAttribute="leading" id="9x6-4E-HtB"/>
+                            <constraint firstItem="haJ-Q1-KaC" firstAttribute="top" secondItem="Kq2-l9-hNa" secondAttribute="bottom" constant="27" id="FmK-fy-2qG"/>
+                            <constraint firstItem="lYv-NJ-bIr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HT0-2E-c5a"/>
+                            <constraint firstItem="Kq2-l9-hNa" firstAttribute="leading" secondItem="ncw-sz-aYj" secondAttribute="leading" id="IYt-j5-sVY"/>
+                            <constraint firstItem="lYv-NJ-bIr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MBN-ca-wpx"/>
+                            <constraint firstItem="Kq2-l9-hNa" firstAttribute="top" secondItem="ncw-sz-aYj" secondAttribute="bottom" constant="8" symbolic="YES" id="QDL-lQ-4YX"/>
+                            <constraint firstItem="BQR-HL-uHL" firstAttribute="leading" secondItem="lYv-NJ-bIr" secondAttribute="leading" id="bdh-Ml-UZs"/>
+                            <constraint firstItem="ncw-sz-aYj" firstAttribute="top" secondItem="BQR-HL-uHL" secondAttribute="bottom" constant="32" id="cmi-Jp-Awq"/>
+                            <constraint firstItem="haJ-Q1-KaC" firstAttribute="leading" secondItem="Kq2-l9-hNa" secondAttribute="leading" id="grc-uy-hQ2"/>
+                            <constraint firstItem="BQR-HL-uHL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ikM-hc-G3W"/>
+                            <constraint firstItem="Kq2-l9-hNa" firstAttribute="trailing" secondItem="BQR-HL-uHL" secondAttribute="trailing" id="luV-rD-xKV"/>
+                            <constraint firstItem="ncw-sz-aYj" firstAttribute="leading" secondItem="BQR-HL-uHL" secondAttribute="leading" id="ns1-4r-Z10"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
